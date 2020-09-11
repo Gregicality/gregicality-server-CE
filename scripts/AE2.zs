@@ -1,5 +1,15 @@
 val laser = mods.gregtech.recipe.RecipeMap.getByName("laser_engraver");
 val press = mods.gregtech.recipe.RecipeMap.getByName("forming_press");
+//Remove AE2 Skystone
+mods.jei.JEI.removeAndHide(<appliedenergistics2:sky_stone_block>);
+//Remove normal AE2 Recipes
+mods.jei.JEI.removeAndHide(<appliedenergistics2:inscriber>);
+recipes.remove(<appliedenergistics2:material:13>);
+recipes.remove(<appliedenergistics2:material:14>);
+recipes.remove(<appliedenergistics2:material:15>);
+recipes.remove(<appliedenergistics2:material:19>);
+recipes.remove(<appliedenergistics2:controller>);
+recipes.remove(<appliedenergistics2:energy_acceptor>);
 //Add Calculation Press Recipes
 laser.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:12202>)
